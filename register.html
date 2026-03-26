@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Band | BandMitra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="bands.html">Bands</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="logo"><a href="index.html" style="text-decoration: none;">BandMitra</a></div>
+  </nav>
+
+  <main class="container">
+    <header class="section-header">
+      <h1 class="section-title">List Your Band</h1>
+      <p class="section-subtitle">Reach thousands of event planners</p>
+    </header>
+    
+    <div class="form-card">
+      <form id="bandRegistrationForm">
+        <div class="form-group">
+          <label for="bandName">Band Name</label>
+          <input type="text" id="bandName" class="form-input" placeholder="e.g., The Royal Brass Band" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="bandPrice">Price per Event (₹)</label>
+          <input type="number" id="bandPrice" class="form-input" placeholder="e.g., 15000" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bandLocation">Location / City</label>
+          <input type="text" id="bandLocation" class="form-input" placeholder="e.g., Mumbai" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Add Band</button>
+      </form>
+    </div>
+
+    <section class="band-list-section">
+      <header class="section-header">
+        <h2 class="section-title">Newly Registered Bands</h2>
+        <p class="section-subtitle">Check out the latest talent on our platform</p>
+      </header>
+      <div id="registeredBands" class="band-list">
+        </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

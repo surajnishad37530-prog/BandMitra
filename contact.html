@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | BandMitra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="bands.html">Bands</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="logo"><a href="index.html" style="text-decoration: none;">BandMitra</a></div>
+  </nav>
+
+  <main class="container">
+    <header class="section-header">
+      <h1 class="section-title">Get In Touch</h1>
+      <p class="section-subtitle">Let's make your event extraordinary</p>
+    </header>
+    
+    <div class="band-list" style="margin-bottom: 3rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="contact-card">
+          <div class="card-icon">📍</div>
+          <h3>Find Us</h3>
+          <p>604 Upwan Lake, Thane City, India</p>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon">📞</div>
+          <h3>Call Us</h3>
+          <p>+91 91520 82526</p>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon">✉️</div>
+          <h3>Email Us</h3>
+          <p>support@bandmitra.com</p>
+        </div>
+    </div>
+
+    <div class="form-card">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="contactName">Name</label>
+          <input type="text" id="contactName" class="form-input" placeholder="Your Full Name" required>
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" class="form-input" placeholder="Your Email Address" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" class="form-input" placeholder="How can we help you?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
